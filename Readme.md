@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Nargiza Salomova](https://up.htmlacademy.ru/adaptive-individual/2/user/2506775).
-* Наставник: `Артём Картавый`.
+* Наставник: `Артём Картавый[https://htmlacademy.ru/profile/artem_k]`.
 
 ---
 
