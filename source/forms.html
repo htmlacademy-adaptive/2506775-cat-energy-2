@@ -41,32 +41,32 @@
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
-      <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="program__fieldset">
+      <form class="program__form-data form-data" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-data__fieldset">
           <legend class="visually-hidden">Данные питомца</legend>
-          <ul class="program__list">
-            <li class="program__item">
-              <label class="program__label">
+          <ul class="form-data__list">
+            <li class="form-data__item">
+              <label class="form-data__label">
                 ИМЯ:*
-                <input class="program__input" type="text" name="pet's name" value="Барсик">
+                <input class="form-data__input" type="text" name="name" value="Барсик" required>
               </label>
             </li>
-            <li class="program__item">
-              <label class="program__label">
+            <li class="form-data__item">
+              <label class="form-data__label">
                 Вес (кг):*
-                <input class="program__input" type="number" name="weight" value="7">
+                <input class="form-data__input" type="number" name="weight" value="7" required>
               </label>
             </li>
-            <li class="program__item">
-              <label class="program__label">
+            <li class="form-data__item">
+              <label class="form-data__label">
                 Возраст (лет):
-                <input class="program__input" type="number" name="age" value="7">
+                <input class="form-data__input" type="number" name="age" value="7">
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="diet">
-          <legend class="visually-hidden">Тип диеты</legend>
+        <fieldset class="program__diet diet">
+          <legend class="diet__legend">Тип диеты</legend>
           <ul class="diet__list">
             <li class="diet__item">
               <label class="diet__label">
@@ -91,28 +91,56 @@
             </li>
           </ul>
         </fieldset>
-      </form>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-      <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="visually-hidden">Почта и номер телефона</legend>
+        <fieldset class="program__contacts contacts">
+          <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
           <ul class="contacts__list">
             <li class="contacts__item">
               <label class="contacts__label">
                 E-mail:*
-                <input class="contacts__input-email" type="e-mail" name="e-mail">
+                <input class="contacts__input-email" type="e-mail" name="e-mail" required>
               </label>
             </li>
             <li class="contacts__item">
               <label class="contacts__label">
                 Телефон:*
-                <input class="contacts__input-telephone" type="number" name="Phone number">
+                <input class="contacts__input-telephone" type="number" name="Phone number" required>
               </label>
             </li>
           </ul>
         </fieldset>
+        <fieldset class="program__supplements supplements">
+          <legend class="supplements__legend">Дополнительно</legend>
+          <ul class="supplements__list">
+            <li class="supplements__item">
+              <label class="supplements__label">
+                <input class="supplements__input" type="checkbox" name="sweetener" checked>
+                сахарозаменитель
+              </label>
+            </li>
+            <li class="supplements__item">
+              <label class="supplements__label">
+                <input class="supplements__input" type="checkbox" name="drinking water">
+                питьевая вода
+              </label>
+            </li>
+            <li class="supplements__item">
+              <label class="supplements__label">
+                <input class="supplements__input" type="checkbox" name="milk">
+                молоко
+              </label>
+            </li>
+            <li class="supplements__item">
+              <label class="supplements__label">
+                <input class="supplements__input" type="checkbox" name="vitamins">
+                витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="program__button-form button-form">
+          <button class="button-form__submit button" type="submit">отправить заявку</button>
+          <span>* — Обязательные поля</span>
+        </div>
       </form>
     </section>
   </main>
