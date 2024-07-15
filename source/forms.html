@@ -42,71 +42,77 @@
         программу питания для вашего кота
       </p>
       <form class="program__form-data form-data" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-data__fieldset">
-          <legend class="visually-hidden">Данные питомца</legend>
-          <ul class="form-data__list">
-            <li class="form-data__item">
-              <label class="form-data__label">
-                ИМЯ:*
-                <input class="form-data__input" type="text" name="name" value="Барсик" required>
-              </label>
-            </li>
-            <li class="form-data__item">
-              <label class="form-data__label">
-                Вес (кг):*
-                <input class="form-data__input" type="number" name="weight" value="7" required>
-              </label>
-            </li>
-            <li class="form-data__item">
-              <label class="form-data__label">
-                Возраст (лет):
-                <input class="form-data__input" type="number" name="age" value="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="program__diet diet">
-          <legend class="diet__legend">Тип диеты</legend>
-          <ul class="diet__list">
-            <li class="diet__item">
-              <label class="diet__label">
-                <input class="diet__radio visually-hidden" type="radio" name="type-of-diet" value="weight loss">
-                <span class="diet-mark"></span>
-                <span class="diet__label-name">похудение</span>
-              </label>
-            </li>
-            <li class="diet__item">
-              <label class="diet__label">
-                <input class="diet__radio visually-hidden" type="radio" name="type-of-diet" value="weight gain">
-                <span class="diet-mark"></span>
-                <span class="diet__label-name">набор массы</span>
-              </label>
-            </li>
-            <li class="diet__item">
-              <label class="diet__label">
-                <input class="diet__radio visually-hidden" type="radio" name="type-of-diet" value="need advice">
-                <span class="diet-mark"></span>
-                <span class="diet__label-name">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form-data__block">
+          <fieldset class="form-data__fieldset">
+            <legend class="visually-hidden">Данные питомца</legend>
+            <ul class="form-data__list">
+              <li class="form-data__item">
+                <label class="form-data__label">
+                  ИМЯ:*
+                  <input class="form-data__input" type="text" name="name" value="Барсик" required>
+                </label>
+              </li>
+              <li class="form-data__item">
+                <label class="form-data__label">
+                  Вес (кг):*
+                  <input class="form-data__input" type="number" name="weight" value="7" required>
+                </label>
+              </li>
+              <li class="form-data__item">
+                <label class="form-data__label">
+                  Возраст (лет):
+                  <input class="form-data__input" type="number" name="age" value="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__diet diet">
+            <legend class="diet__legend">Тип диеты</legend>
+            <ul class="diet__list">
+              <li class="diet__item">
+                <label class="diet__label">
+                  <input class="diet__radio visually-hidden" type="radio" name="type-of-diet" value="weight loss">
+                  <span class="diet-mark"></span>
+                  <span class="diet__label-name">похудение</span>
+                </label>
+              </li>
+              <li class="diet__item">
+                <label class="diet__label">
+                  <input class="diet__radio visually-hidden" type="radio" name="type-of-diet" value="weight gain">
+                  <span class="diet-mark"></span>
+                  <span class="diet__label-name">набор массы</span>
+                </label>
+              </li>
+              <li class="diet__item">
+                <label class="diet__label">
+                  <input class="diet__radio visually-hidden" type="radio" name="type-of-diet" value="need advice">
+                  <span class="diet-mark"></span>
+                  <span class="diet__label-name">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="program__contacts contacts">
           <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
           <ul class="contacts__list">
             <li class="contacts__item">
               <label class="contacts__label">
                 E-mail:*
-                <input class="contacts__input-email" type="email" name="e-mail" required>
+                <input class="contacts__input-email" type="email" name="e-mail" value="кuklachev@gmail.com" required>
               </label>
             </li>
             <li class="contacts__item">
               <label class="contacts__label">
                 Телефон:*
-                <input class="contacts__input-telephone" type="number" name="Phone number" required>
+                <input class="contacts__input-telephone" type="number" name="Phone number" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
+        </fieldset>
+        <fieldset class="program__comment comment">
+          <legend class="comment__legend">Комментарий</legend>
+          <textarea class="comment__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="program__supplements supplements">
           <legend class="supplements__legend">Дополнительно</legend>
