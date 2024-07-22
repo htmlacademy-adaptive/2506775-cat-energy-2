@@ -126,11 +126,19 @@
       <span class="result__sum">15 000 РУБ.</span>
       <div class="result__images-cat images-cat">
         <div class="images-cat__thick">
-          <img src="#" width="560" height="512" alt="Борис до приёма корма Cat Energy Slim.">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="./images/desktop-images/index/cat-before-tablet@1x.png 1x, ./images/desktop-images/index/cat-before-tablet@2x.png 2x">
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/desktop-images/index/cat-before-tablet@1x.png 1x, ./images/desktop-images/index/cat-before-tablet@2x.png 2x">
+            <img src="./images/phone-images/index/cat-before-mobile@1x.png" srcset="./images/phone-images/index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Борис до приёма корма Cat Energy Slim.">
+          </picture>
         </div>
-        <div class="images-cat__thin">
-          <img src="#" width="560" height="512" alt="Борис через два месяца после замены своего корма на Cat Energy Slim.">
-        </div>
+        <div class="images-cat__thin"></div>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="./images/desktop-images/index/cat-after-tablet@1x.png 1x, ./images/desktop-images/index/cat-after-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/desktop-images/index/cat-after-tablet@1x.png 1x, ./images/desktop-images/index/cat-after-tablet@2x.png 2x">
+          <img src="./images/phone-images/index/cat-after-mobile@1x.png" srcset="./images/phone-images/index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Борис через два месяца после замены своего корма на Cat Energy Slim.">
+        </picture>
+      </div>
       </div>
     </section>
   </main>
