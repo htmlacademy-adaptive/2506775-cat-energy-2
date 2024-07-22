@@ -39,7 +39,9 @@
     <section class="hero">
       <h2 class="visually-hidden">Подбор программы</h2>
       <picture>
-        <img class="hero__product" src="./images/phone images/index/mobile-hero-product@1x.png" width="552" height="499" alt="упаковка с питанием cat energy.">
+        <source width="552" height="499" type="image/png" media="(min-width:1440px)" srcset="images/desktop-images/index/hero-product-desktop@1x.png, images/desktop-images/index/hero-product-desktop@2x.png">
+        <source width="709" height="609" type="image/png" media="(min-width:768px)" srcset="images/tablet-images/index/tablet-hero-product@1x.png, images/tablet-images/index/tablet-hero-product@2x.png">
+        <img class="hero__product" src="./images/phone-images/index/mobile-hero-product@1x.png" srcset="./images/phone-images/index/mobile-hero-product@2x.png" width="280" height="270" alt="упаковка с питанием cat energy.">
       </picture>
       <p class="hero__title title">Функциональное питание для котов</p>
       <p class="hero__description">Занялся собой? Займись котом!</p>
@@ -123,10 +125,12 @@
       <span class="result__sum">15 000 РУБ.</span>
       <div class="result__images-cat images-cat">
         <div class="images-cat__thick">
-          <img src="#" width="560" height="512" alt="Борис до приёма корма Cat Energy Slim.">
+          <img src="./images/phone-images/index/viewport=mobile" width="280" height="256" alt="Борис до приёма корма Cat Energy Slim.">
         </div>
         <div class="images-cat__thin">
-          <img src="#" width="560" height="512" alt="Борис через два месяца после замены своего корма на Cat Energy Slim.">
+          <picture>
+            <img src="#" width="560" height="512" alt="Борис через два месяца после замены своего корма на Cat Energy Slim.">
+          </picture>
         </div>
       </div>
     </section>
