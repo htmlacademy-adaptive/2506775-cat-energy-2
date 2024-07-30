@@ -2,7 +2,38 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/title.scss";
+@import "./blocks/button.scss";
+@import "./blocks/description.scss";
+@import "./blocks/result.scss";
+@import "./blocks/images-cat.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/location.scss";
+@import "./blocks/address.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/social.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/description-product.scss";
+@import "./blocks/button-more.scss";
+@import "./blocks/addition.scss";
+@import "./blocks/item-product.scss";
+@import "./blocks/news.scss";
+@import "./blocks/program.scss";
+@import "./blocks/form-data.scss";
+@import "./blocks/diet.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/supplements.scss";
+@import "./blocks/button-form.scss";
+
 
