@@ -1,3 +1,11 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__title {
+  color: $basic-light-text;
+}
+
 .hero__description {
   font-family: "Oswald", sans-serif;
   font-size: 14px;

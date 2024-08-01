@@ -6,14 +6,15 @@
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
-@import "./blocks/title.scss";
-@import "./blocks/button.scss";
 @import "./blocks/description.scss";
 @import "./blocks/result.scss";
 @import "./blocks/images-cat.scss";
@@ -27,7 +28,6 @@
 @import "./blocks/description-product.scss";
 @import "./blocks/button-more.scss";
 @import "./blocks/addition.scss";
-@import "./blocks/subtitle.scss";
 @import "./blocks/item-product.scss";
 @import "./blocks/news.scss";
 @import "./blocks/program.scss";
