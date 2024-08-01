@@ -1,0 +1,28 @@
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-gray;
+  text-transform: uppercase;
+}
+
+.catalog__more-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-light-gray;
+  text-transform: uppercase;
+}
+
+.catalog__more-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button-more {
+  color: $primery-text;
+}
