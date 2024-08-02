@@ -3,25 +3,21 @@
 }
 
 .result__subtitle {
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px);
 }
 
 .result__number {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
+  @include font(24px, 24px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .result__text {
-  font-size: 12px;
-  line-height: 12;
+  @include font(12px, 12px, 400);
 }
 
 .result__expenses {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  @include font(14px,20px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: $basic-dark-text;
 }

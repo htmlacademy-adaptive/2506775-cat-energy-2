@@ -8,3 +8,8 @@
   }
 }
 
+@mixin font($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
