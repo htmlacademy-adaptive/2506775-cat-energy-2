@@ -1,0 +1,14 @@
+.card {
+  background-color: $bg-basic-gray;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  @include font(16px, 20px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $special-dark-gray;
+  text-transform: uppercase;
+}

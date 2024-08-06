@@ -1,0 +1,7 @@
+.site-list__link {
+  @include font(20px, 20px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $basic-dark-text;
+  text-decoration: none;
+}

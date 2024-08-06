@@ -1,0 +1,5 @@
+.title {
+  @include font(36px, 40px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-dark-text;
+}
