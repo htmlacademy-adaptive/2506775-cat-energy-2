@@ -1,0 +1,21 @@
+.diet__block {
+  background-color: $bg-basic-gray;
+}
+
+.diet__title {
+  @include font(24px, 37px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-dark-text;
+}
+
+.diet__description {
+  @include font(14px, 18px, 400);
+}
+
+.diet__link {
+  @include font(16px, 16px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $basic-dark-text;
+  text-decoration: none;
+}

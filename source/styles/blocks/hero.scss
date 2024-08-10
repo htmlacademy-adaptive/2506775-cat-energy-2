@@ -1,0 +1,14 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__title {
+  color: $basic-light-text;
+}
+
+.hero__description {
+  @include font(14px, 14px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $basic-light-text;
+}

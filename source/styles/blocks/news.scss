@@ -1,0 +1,13 @@
+.news__subscription {
+  @include font(16px, 24px, 400);
+  font-family: "Oswald", sans-serif;
+  color: $basic-dark-text;
+}
+
+.news__field {
+  @include font(20px, 30px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}

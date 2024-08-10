@@ -1,0 +1,15 @@
+.catalog__button-more {
+  background-color: $bg-basic-gray;
+  color: $primary-text;
+}
+
+.catalog__more-title {
+  @include font(16px, 20px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $special-light-gray;
+  text-transform: uppercase;
+}
+
+.catalog__more-text {
+  @include font(12px, 16px, 400);
+}
