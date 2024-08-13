@@ -16,20 +16,21 @@
   background-color: $bg-basic-gray;
 }
 
-.footer__logo-link g {
-  transition: fill 0.3s ease;
+.footer__logo-link {
+  transition: color 0.3s ease;
+  color: #000000;
 }
 
-.footer__logo-link:hover g {
-  fill: $link-logo-hover;
+.footer__logo-link:hover {
+  color: $link-logo-hover;
 }
 
-.footer__logo-link:focus g {
-  fill: $link-logo-hover;
+.footer__logo-link:focus {
+  color: $link-logo-hover;
 }
 
-.footer__logo-link:active g {
-  fill: $link-logo-active;
+.footer__logo-link:active {
+  color: $link-logo-active;
 }
 
 .footer__developer-link {
