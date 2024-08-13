@@ -16,10 +16,51 @@
   background-color: $bg-basic-gray;
 }
 
+.footer__logo-link {
+  transition: color 0.3s ease;
+  color: #000000;
+}
+
+.footer__logo-link:hover {
+  color: $link-logo-hover;
+}
+
+.footer__logo-link:focus {
+  color: $link-logo-hover;
+}
+
+.footer__logo-link:active {
+  color: $link-logo-active;
+}
+
 .footer__developer-link {
   @include font(16px, 20px, 400);
   color: $primary-text;
   text-decoration: none;
+  transition: opacity 0.3s ease;
+  display: inline-block;
+  height: 34px;
+}
+
+.footer__developer-logo {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  background-color: $link-gray;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  transition: background-color 0.3s ease;
+}
+
+.footer__developer-link:hover .footer__developer-logo {
+  background-color: $bg-basic-green;
+}
+
+.footer__developer-link:focus .footer__developer-logo {
+  background-color: $bg-basic-green;
+}
+
+.footer__developer-link:active {
+  opacity: 0.3;
 }
 
 .footer--catalog {
