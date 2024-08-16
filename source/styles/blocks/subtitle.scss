@@ -1,0 +1,5 @@
+.subtitle {
+  @include font(24px, 24px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-dark-text;
+}

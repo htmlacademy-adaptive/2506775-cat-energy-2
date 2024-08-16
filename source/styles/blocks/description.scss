@@ -1,0 +1,24 @@
+.description__subtitle {
+  @include font(14px, 18px, 400);
+}
+
+.description__item {
+  background-color: $bg-basic-green;
+}
+
+.description__item--leaf {
+  background-image: url("../../icons/stack.svg#leaf");
+}
+
+
+.description__item--water {
+  background-image: url("../../icons/stack.svg#water");
+}
+
+.description__item--fork {
+  background-image: url("../../icons/stack.svg#fork");
+}
+
+.description__item--scale {
+  background-image: url("../../icons/stack.svg#scale");
+}

@@ -1,0 +1,12 @@
+.main-header__logo-link {
+  transition: opacity 0.3s ease;
+}
+
+.main-header__logo-link:hover,
+.main-header__logo-link:focus {
+  opacity: 0.8;
+}
+
+.main-header__logo-link:active {
+  opacity: 0.6;
+}

@@ -1,0 +1,37 @@
+.diet__block {
+  background-color: $bg-basic-gray;
+}
+
+.diet__title {
+  @include font(24px, 37px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-dark-text;
+}
+
+.diet__description {
+  @include font(14px, 18px, 400);
+}
+
+.diet__link {
+  @include font(16px, 16px, 400);
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $basic-dark-text;
+  text-decoration: none;
+  background-image: url("../../icons/stack.svg#arrow");
+  transition: opacity 0.3s ease;
+}
+
+.diet__link:active {
+  opacity: 0.3;
+}
+
+.diet__block--slim {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.diet__block--pro {
+  background-image: url("../../icons/stack.svg#cat-pro");
+}
