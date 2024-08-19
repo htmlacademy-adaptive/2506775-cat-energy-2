@@ -1,0 +1,27 @@
+.form-data__container {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    width: 623px;
+  }
+}
+
+.form-data__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-data__block {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form-data__textarea {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
