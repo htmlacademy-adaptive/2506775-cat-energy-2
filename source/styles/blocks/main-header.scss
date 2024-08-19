@@ -1,5 +1,29 @@
+.main-header {
+  position: absolute;
+  z-index: 1;
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 704px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+
 .main-header__logo-link {
   transition: opacity 0.3s ease;
+  text-decoration: none;
 }
 
 .main-header__logo-link:hover,

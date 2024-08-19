@@ -1,7 +1,25 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-body {
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
   font-family: "Lato", "Arial", sans-serif;
   color: $primary-text;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

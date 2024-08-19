@@ -1,3 +1,18 @@
+.description__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 250px);
+  }
+}
+
 .description__subtitle {
   @include font(14px, 18px, 400);
 }
