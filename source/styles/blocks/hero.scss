@@ -1,5 +1,29 @@
 .hero {
-  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+  height: 694px;
+  background-color: tomato;
+}
+
+.hero__background {
+  background-image: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/phone-images/index/mobile-hero-background@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/desktop-images/index/hero-background-desktop@2x.png");
+    background-size: contain;
+    background-position: right;
+    width: 720px;
+    height: 694px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .hero__title {
