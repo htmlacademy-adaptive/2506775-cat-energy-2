@@ -1,0 +1,10 @@
+.supplements__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 221px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 221px);
+  }
+}

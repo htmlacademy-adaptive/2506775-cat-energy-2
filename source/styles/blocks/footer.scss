@@ -14,6 +14,11 @@
 
 .footer__navigation {
   background-color: $bg-basic-gray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo-link {
@@ -40,6 +45,12 @@
   transition: opacity 0.3s ease;
   display: inline-block;
   height: 34px;
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer__developer-logo {
