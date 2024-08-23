@@ -2,6 +2,17 @@
   background-color: $bg-accent-gray;
 }
 
+
+.result__block {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+
 .result__subtitle {
   @include font(14px, 18px, 400);
 }

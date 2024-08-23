@@ -1,3 +1,18 @@
+
+.catalog__block {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
+}
+
+
 .catalog__button-more {
   background-color: $bg-basic-gray;
   color: $primary-text;
