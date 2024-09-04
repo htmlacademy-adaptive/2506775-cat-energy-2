@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  background-color: #ff6347;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: none;
@@ -24,6 +23,10 @@
 
 .hero__title {
   color: $basic-light-text;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-dark-text;
+  }
 }
 
 .hero__description {
@@ -31,4 +34,9 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: $basic-light-text;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-dark-text;
+  }
 }
