@@ -5,6 +5,11 @@
   right: 0;
   z-index: 2;
   background-color: $basic-light-text;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-top: auto;
+  }
 }
 
 .main-nav__list {
@@ -13,7 +18,6 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    width: 436px;
+    min-width: 436px;
   }
 }
-

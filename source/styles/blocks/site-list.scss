@@ -1,8 +1,19 @@
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 33px;
+  }
+}
+
 .site-list__item {
-  padding-top: 22px;
-  padding-bottom: 24px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .site-list--accent {
@@ -22,6 +33,29 @@
   text-decoration: none;
   padding-top: 22px;
   padding-bottom: 24px;
+  display: block;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    font-size: 18px;
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-top: 11px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $bg-basic-green;
+      margin-top: 10px;
+    }
+  }
 }
 
 .site-list__link:active {

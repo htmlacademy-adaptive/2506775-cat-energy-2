@@ -19,6 +19,9 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 704px;
+    margin: 0 32px;
+    grid-template-columns: 174px 1fr;
+    gap: 94px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +47,10 @@
 
 .main-header__logo {
   margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 .main-header__toggle {
