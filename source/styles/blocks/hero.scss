@@ -24,13 +24,21 @@
 
 .hero__title {
   color: $basic-light-text;
+  line-height: 36px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     color: $basic-dark-text;
-    max-width: 416px;
+    width: 416px;
     font-size: 60px;
     line-height: 60px;
+    margin: 0;
     margin-bottom: 40px;
+    padding: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {

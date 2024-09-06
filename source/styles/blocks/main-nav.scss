@@ -16,6 +16,14 @@
   }
 }
 
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
