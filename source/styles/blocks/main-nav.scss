@@ -10,6 +10,10 @@
     position: static;
     margin-top: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {

@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 694px;
     background-image:
       linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(url("../../images/desktop-images/index/hero-background-desktop@1x.png") 1x,
@@ -26,6 +27,14 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-dark-text;
+    max-width: 416px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 224px;
   }
 }
 
@@ -38,5 +47,7 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-dark-text;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
