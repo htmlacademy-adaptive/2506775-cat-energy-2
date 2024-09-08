@@ -33,6 +33,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__title {
@@ -88,6 +92,12 @@
     z-index: -1;
     top: 190px;
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 10;
+    top: 143px;
+    left: 723px;
+  }
 }
 
 .hero__button {
@@ -100,5 +110,6 @@
     padding: 14px 26px;
     font-size: 20px;
     line-height: 26px;
+    max-width: 244px;
   }
 }
