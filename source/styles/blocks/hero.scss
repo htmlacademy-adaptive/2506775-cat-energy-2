@@ -4,8 +4,11 @@
     image-set(url("../../images/phone-images/index/mobile-hero-background@1x.jpg") 1x,
     url("../../images/phone-images/index/mobile-hero-background@2x.jpg") 2x);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: center top;
   position: relative;
+  height: 302px;
+  margin-bottom: 200px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: none;
@@ -22,12 +25,17 @@
   }
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__title {
   color: $basic-light-text;
   line-height: 36px;
   width: 250px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 25px;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -51,11 +59,28 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: $basic-light-text;
-  margin: 0;
+  margin: 0 auto;
+  width: 200px;
 
   @media (min-width: $tablet-width) {
     color: $basic-dark-text;
     font-size: 20px;
     line-height: 20px;
+    width: 285px;
+    margin: 0;
   }
+}
+
+.hero__product {
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__button {
+  position: absolute;
+  top: 440px;
+  width: 100%;
+  padding: 10px 44px;
 }
