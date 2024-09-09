@@ -7,6 +7,20 @@
 
 .diet__block {
   background-color: $bg-basic-gray;
+  position: relative;
+  padding: 30px 10px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.diet__block::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $bg-basic-green;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 20px;
 }
 
 .diet__title {
@@ -14,10 +28,18 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-dark-text;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  margin-left: 69px;
 }
 
 .diet__description {
   @include font(14px, 18px, 400);
+  margin: 0;
+  max-width: 240px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
 }
 
 .diet__link {
@@ -26,7 +48,11 @@
   text-transform: uppercase;
   color: $basic-dark-text;
   text-decoration: none;
+  padding-right: 47px;
   background-image: url("../../icons/stack.svg#arrow");
+  background-size: 24px 12px;
+  background-position: center right 8px;
+  background-repeat: no-repeat;
   transition: opacity 0.3s ease;
 }
 
@@ -34,12 +60,25 @@
   opacity: 0.3;
 }
 
-.diet__block--slim {
+.diet__block--slim::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 27px;
+  z-index: 10;
   background-image: url("../../icons/stack.svg#cat-slim");
-  background-position: center;
+  width: 36px;
+  height: 50px;
   background-repeat: no-repeat;
 }
 
-.diet__block--pro {
+.diet__block--pro::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 11px;
+  z-index: 10;
   background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 28px;
 }
