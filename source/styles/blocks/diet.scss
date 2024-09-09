@@ -5,11 +5,30 @@
   }
 }
 
+.diet {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 45px;
+  }
+}
+
 .diet__block {
   background-color: $bg-basic-gray;
   position: relative;
   padding: 30px 10px 20px 20px;
-  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 53px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .diet__block::after {
@@ -21,6 +40,13 @@
   position: absolute;
   top: 24px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 445px;
+  }
 }
 
 .diet__title {
@@ -31,6 +57,12 @@
   margin: 0;
   margin-bottom: 29px;
   margin-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+  }
 }
 
 .diet__description {
@@ -40,6 +72,14 @@
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 23px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-dark-text;
+    max-width: 340px;
+    border: none;
+  }
 }
 
 .diet__link {
@@ -54,6 +94,11 @@
   background-position: center right 8px;
   background-repeat: no-repeat;
   transition: opacity 0.3s ease;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .diet__link:active {
@@ -70,6 +115,13 @@
   width: 36px;
   height: 50px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: 475px;
+  }
 }
 
 .diet__block--pro::before {
@@ -81,4 +133,11 @@
   background-image: url("../../icons/stack.svg#cat-pro");
   width: 67px;
   height: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: 411px;
+  }
 }
