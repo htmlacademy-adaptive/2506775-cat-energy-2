@@ -2,6 +2,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
   }
 }
 
@@ -29,6 +32,12 @@
       margin-bottom: 30px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    padding: 77px 61px 55px 52px;
+    margin-bottom: 0;
+  }
 }
 
 .diet__block::after {
@@ -47,6 +56,13 @@
     top: 92px;
     left: 445px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 41px;
+    left: 52px;
+  }
 }
 
 .diet__title {
@@ -62,6 +78,11 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
@@ -79,6 +100,10 @@
     color: $basic-dark-text;
     max-width: 340px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 457px;
   }
 }
 
@@ -122,6 +147,13 @@
     top: 81px;
     left: 475px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
 }
 
 .diet__block--pro::before {
@@ -139,5 +171,12 @@
     height: 112px;
     top: 135px;
     left: 411px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
   }
 }
