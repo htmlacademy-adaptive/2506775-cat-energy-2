@@ -1,5 +1,7 @@
 .result {
   background-color: $bg-accent-gray;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .result__block {
@@ -13,6 +15,7 @@
 
 .result__subtitle {
   @include font(14px, 18px, 400);
+  margin-bottom: 40px;
 }
 
 .result__number {
