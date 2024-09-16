@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-grow: 1;
+    flex-basis: 50% 50%;
     padding: 77px 61px 55px 52px;
     margin-bottom: 0;
   }
@@ -54,7 +54,7 @@
     width: 200px;
     height: 200px;
     top: 92px;
-    left: 445px;
+    left: 63%;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +89,7 @@
 .diet__description {
   @include font(14px, 18px, 400);
   margin: 0;
-  max-width: 240px;
+  min-width: 240px;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 23px;
   margin-bottom: 15px;
@@ -98,7 +98,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $basic-dark-text;
-    max-width: 340px;
+    width: 57%;
     border: none;
   }
 
@@ -145,7 +145,7 @@
     width: 140px;
     height: 194px;
     top: 81px;
-    left: 475px;
+    left: 67%;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,7 +170,7 @@
     width: 268px;
     height: 112px;
     top: 135px;
-    left: 411px;
+    left: 58%;
   }
 
   @media (min-width: $desktop-width) {

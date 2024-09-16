@@ -28,3 +28,13 @@
     max-width: 1220px;
   }
 }
+
+picture {
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: contents;
+  }
+}
