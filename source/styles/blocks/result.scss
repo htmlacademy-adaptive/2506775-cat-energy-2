@@ -13,18 +13,100 @@
   }
 }
 
+.result__example {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: auto 70px auto;
+  gap: 20px 32px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: auto 77px;
+    grid-template-columns: 162px 162px 1fr;
+    column-gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 173px 255px;
+    grid-template-rows: auto 77px auto;
+    align-content: start;
+    column-gap: 31px;
+  }
+}
+
+
+.result__title {
+  margin-bottom: 40px;
+}
+
 .result__subtitle {
   @include font(14px, 18px, 400);
-  margin-bottom: 40px;
+  margin: 0;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.result__description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.result__days {
+  justify-self: right;
+
+  @media (min-width: $desktop-width) {
+    justify-self: left;
+  }
 }
 
 .result__number {
   @include font(24px, 24px, 400);
   font-family: "Oswald", "Arial", sans-serif;
+  display: inline-block;
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid $special-gray;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result__text {
   @include font(12px, 12px, 400);
+  width: 87px;
+  min-height: 24px;
+  text-align: center;
+  padding: 0 5px;
+  position: absolute;
+  top: 47px;
+  left: 18px;
+  background-color: $bg-accent-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    padding: 0;
+    top: 63px;
+    left: 24px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.result__days .result__text {
+  width: 142px;
+  left: 10px;
 }
 
 .result__expenses {
@@ -32,4 +114,30 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: $basic-dark-text;
+  margin: 0;
+  grid-column: 1 / -1;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    place-self: center right;
+    max-width: 180px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: start;
+    margin-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    max-width: none;
+    justify-self: start;
+  }
+}
+
+.result__expenses span {
+  @media (min-width: $desktop-width) {
+    margin-left: 64px;
+  }
 }
