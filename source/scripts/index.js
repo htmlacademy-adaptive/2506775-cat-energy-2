@@ -13,3 +13,9 @@ menuToggle.addEventListener('click',() =>{
     navMenu.classList.add('main-nav--closed');
   }
 });
+
+const imagesCat = document.querySelector('.images-cat');
+
+document.querySelector('.images-cat__slider').addEventListener('input', (e)=>{
+  imagesCat.style.setProperty('--position', `${e.target.value}%`);
+});

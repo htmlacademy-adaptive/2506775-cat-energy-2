@@ -1,19 +1,32 @@
 .images-cat {
-  width: 100%;
+  max-width: 280px;
   min-height: 256px;
   position: relative;
   overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  --position: 50%;
 }
 
 .images-cat__before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: var(--position);
   height: 100%;
   overflow: hidden;
   z-index: 10;
   background-color: $bg-accent-gray;
+}
+
+.images-cat__slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 20;
 }
 
 .images-cat__after {
@@ -32,7 +45,8 @@
     background-color: $link-gray;
     position: absolute;
     top: 0;
-    right: 49%;
+    left: var(--position);
+    transform: translateX(-50%);
     z-index: 10;
     cursor: e-resize;
   }
@@ -46,10 +60,11 @@
     background-color: $basic-light-text;
     position: absolute;
     top: 50%;
-    right: 119px;
+    left: var(--position);
     z-index: 10;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     cursor: e-resize;
     background-image: url("../../icons/stack.svg#slider");
   }
 }
+
