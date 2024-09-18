@@ -29,6 +29,10 @@
   }
 }
 
+img {
+  display: inline-block;
+}
+
 picture {
   @media (min-width: $tablet-width) {
     display: contents;

@@ -1,0 +1,55 @@
+.images-cat {
+  width: 100%;
+  min-height: 256px;
+  position: relative;
+  overflow: hidden;
+}
+
+.images-cat__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10;
+  background-color: $bg-accent-gray;
+}
+
+.images-cat__after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 4px;
+    min-height: 256px;
+    background-color: $link-gray;
+    position: absolute;
+    top: 0;
+    right: 49%;
+    z-index: 10;
+    cursor: e-resize;
+  }
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $link-gray;
+    background-color: $basic-light-text;
+    position: absolute;
+    top: 50%;
+    right: 119px;
+    z-index: 10;
+    transform: translateY(-50%);
+    cursor: e-resize;
+    background-image: url("../../icons/stack.svg#slider");
+  }
+}

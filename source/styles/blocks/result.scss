@@ -19,6 +19,7 @@
   grid-template-rows: auto 70px auto;
   gap: 20px 32px;
   justify-content: center;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: auto 77px;
@@ -105,8 +106,10 @@
 }
 
 .result__days .result__text {
-  width: 142px;
-  left: 10px;
+  @media (min-width: $desktop-width) {
+    width: 142px;
+    left: 10px;
+  }
 }
 
 .result__expenses {
