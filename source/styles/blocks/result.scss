@@ -2,6 +2,11 @@
   background-color: $bg-accent-gray;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(234, 234, 234, 1) 56%, rgba(234, 234, 234, 1) 100%);
+    padding-bottom: 101px;
+  }
 }
 
 .result__block {
@@ -10,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -24,7 +30,8 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: auto 77px;
     grid-template-columns: 162px 162px 1fr;
-    column-gap: 43px;
+    gap: 55px 43px;
+    margin-bottom: 102px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +45,11 @@
 
 .result__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .result__subtitle {
@@ -102,11 +114,12 @@
     left: 24px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $basic-light-text;
   }
 }
 
 .result__days .result__text {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 142px;
     left: 10px;
   }
@@ -143,4 +156,9 @@
   @media (min-width: $desktop-width) {
     margin-left: 64px;
   }
+}
+
+
+.result__images-cat {
+  margin: 0 auto;
 }
