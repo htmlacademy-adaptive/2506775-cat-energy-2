@@ -36,6 +36,10 @@
   @media (min-width: $desktop-width) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 22%, rgba(242, 242, 242, 1) 22%, rgba(242, 242, 242, 1) 100%);
   }
+
+  @media (min-width: $desktop-max-width) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(242, 242, 242, 1) 26%, rgba(242, 242, 242, 1) 100%);
+  }
 }
 
 .images-cat__slider {
