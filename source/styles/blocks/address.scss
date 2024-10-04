@@ -1,40 +1,64 @@
 .address {
   height: 474px;
   background-image:
-    image-set(url("../../images/phone-images/index/mobile-map-pin@1x.png") 1x,
-    url("../../images/phone-images/index/mobile-map-pin@2x.png") 2x),
     image-set(url("../../images/phone-images/index/mobile-map@1x.jpg") 1x,
     url("../../images/phone-images/index/mobile-map@2x.jpg") 2x);
   background-repeat: no-repeat;
-  background-size: 56px 53px, 100% 76%;
+  background-size: 100% 76%;
   background-position: center top 251px, bottom;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 56px;
+    height: 53px;
+    background-image:
+      image-set(url("../../images/phone-images/index/mobile-map-pin@1x.png") 1x,
+      url("../../images/phone-images/index/mobile-map-pin@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: 56px 53px;
+    position: absolute;
+    top: 251px;
+    left: 50%;
+    z-index: 10;
+  }
 
   @media (min-width: $tablet-width) {
     background-image:
-      image-set(url("../../images/tablet-images/index/tablet-map-pin@1x.png") 1x,
-      url("../../images/tablet-images/index/tablet-map-pin@2x.png") 2x),
       image-set(url("../../images/tablet-images/index/tablet-map@1x.jpg") 1x,
       url("../../images/tablet-images/index/tablet-map@2x.jpg") 2x);
-    background-size: 113px 106px, 100% 65%;
-    background-position: center top 346px, bottom;
+    background-size: 100% 65%;
+    background-position: bottom;
     height: 608px;
+
+    &::before {
+      width: 113px;
+      height: 106px;
+      background-size: 113px 106px;
+      left: 50%;
+      top: 405px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image:
-      image-set(url("../../images/tablet-images/index/tablet-map-pin@1x.png") 1x,
-      url("../../images/tablet-images/index/tablet-map-pin@2x.png") 2x),
       image-set(url("../../images/desktop-images/index/map-desktop@1x.jpg") 1x,
       url("../../images/desktop-images/index/map-desktop@2x.jpg") 2x);
-    background-position: 69% 131px, 100%;
-    background-size: 113px 106px, 100% 100%;
+    background-position: 100%;
+    background-size: 100%;
     height: 400px;
+
+    &::before {
+      left: 63%;
+      top: 131px;
+    }
   }
 }
 
 .address iframe {
   border: none;
   display: block;
+  width: 100%;
   height: 362px;
 
   @media (min-width: $tablet-width) {

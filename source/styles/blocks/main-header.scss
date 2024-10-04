@@ -29,6 +29,10 @@
   }
 }
 
+.main-header--nojs .main-header__container {
+  width: 100%;
+}
+
 .main-header__logo-link {
   transition: opacity 0.3s ease;
   text-decoration: none;
@@ -70,6 +74,20 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header--nojs .main-header__toggle {
+  opacity: 0;
+}
+
+.main-header--nojs .main-header__logo-link {
+  margin-left: 20px;
+}
+
+.main-header--nojs .main-nav {
+  display: block;
+  position: static;
+  grid-column: 1/-1;
 }
 
 .main-header__toggle--closed::before {
