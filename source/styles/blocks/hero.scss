@@ -16,15 +16,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 694px;
     background-image:
-      linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      image-set(url("../../images/desktop-images/index/hero-background-desktop@1x.png") 1x,
-      url("../../images/desktop-images/index/hero-background-desktop@2x.png") 2x);
-    background-size: 50% 100%;
+      linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
+      image-set(url("../../images/desktop-images/index/desktop-hero-cat@1x.jpeg") 1x,
+      url("../../images/desktop-images/index/desktop-hero-cat@2x.jpeg") 2x);
+    background-size: 100%, contain;
     background-position: right top;
     margin-bottom: 82px;
     padding-top: 143px;
+    min-height: 720px;
   }
 }
 

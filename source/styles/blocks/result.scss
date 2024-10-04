@@ -39,18 +39,22 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-rows: auto 77px;
+    grid-template-rows: 72px 77px;
     grid-template-columns: 162px 162px 1fr;
     gap: 55px 43px;
     margin-bottom: 102px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 173px 255px;
+    grid-template-columns: 173px 165px;
     grid-template-rows: auto 77px auto;
     align-content: start;
     column-gap: 31px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    grid-template-columns: 173px 255px;
   }
 }
 
@@ -184,8 +188,6 @@
 
 
 .result__images-cat {
-  margin: 0 auto;
-
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-top: -131px;

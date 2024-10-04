@@ -1,5 +1,5 @@
 .address {
-  min-height: 474px;
+  height: 474px;
   background-image:
     image-set(url("../../images/phone-images/index/mobile-map-pin@1x.png") 1x,
     url("../../images/phone-images/index/mobile-map-pin@2x.png") 2x),
@@ -15,9 +15,9 @@
       url("../../images/tablet-images/index/tablet-map-pin@2x.png") 2x),
       image-set(url("../../images/tablet-images/index/tablet-map@1x.jpg") 1x,
       url("../../images/tablet-images/index/tablet-map@2x.jpg") 2x);
-    background-size: 113px 106px, 100% 67%;
+    background-size: 113px 106px, 100% 65%;
     background-position: center top 346px, bottom;
-    min-height: 600px;
+    height: 608px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,17 @@
       url("../../images/desktop-images/index/map-desktop@2x.jpg") 2x);
     background-position: 69% 131px, 100%;
     background-size: 113px 106px, 100% 100%;
-    min-height: 400px;
+    height: 400px;
+  }
+}
+
+.address iframe {
+  border: none;
+  display: block;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
 
@@ -36,7 +46,7 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 40px;
+    padding: 60px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +67,6 @@
     top: 95px;
     left: 0;
   }
-
 
   @media (min-width: $desktop-max-width) {
     padding: 60px 78px 60px 80px;
@@ -97,6 +106,8 @@
 }
 
 .address__location > span {
+  display: block;
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-bottom: 28px;
