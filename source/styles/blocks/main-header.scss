@@ -131,3 +131,9 @@
 .main-header__toggle--opened:active::after {
   box-shadow: none;
 }
+
+
+.main-header__catalog {
+  border-bottom: 1px solid $border-gray;
+  margin-bottom: 27px;
+}
