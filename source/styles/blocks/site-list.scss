@@ -4,6 +4,11 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 33px;
+    row-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
   }
 }
 

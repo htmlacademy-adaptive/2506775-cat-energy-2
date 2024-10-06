@@ -3,7 +3,7 @@
   top: 66px;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 15;
   background-color: $basic-light-text;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +30,6 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    min-width: 436px;
+    min-width: 440px;
   }
 }
