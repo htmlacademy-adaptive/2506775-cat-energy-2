@@ -14,26 +14,29 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--catalog  main-header--nojs">
+  <header class="main-header main-header--catalog main-header--nojs">
     <div class="main-header__container container">
-      <a class="main-header__logo-link" href="#">
+      <a class="main-header__logo-link" href="index.html">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1024px)" srcset="./images/desktop-images/logo-desktop.svg">
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/tablet-images/logo-tablet.svg">
           <img class="main-header__logo" src="./images/phone-images/logo-mobile.svg" width="33" height="38" alt="логотип cat energy.">
         </picture>
-        <img class="main-header__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="фирменная надпись cat energy.">
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1024px)" srcset="./images/logo-text.svg">
+          <img class="main-header__logo-text main-header__logo-text--catalog" src="./images/logo-text.svg" width="101" height="20" alt="фирменная надпись cat energy.">
+        </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button" disabled>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav main-nav--closed">
-        <ul class="main-nav__list site-list site-list--accent">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">главная</a>
+            <a class="site-list__link" href="index.html">главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог продукции</a>
+            <a class="site-list__link site-list__link--current site-list__link--current-catalog" href="#">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="forms.html">подбор программы</a>
@@ -44,8 +47,10 @@
   </header>
   <main class="main-container">
     <section class="catalog">
-      <h1 class="catalog__title title">Каталог продукции</h1>
-      <div class="catalog__block">
+      <div class="container">
+        <h1 class="catalog__title title">Каталог продукции</h1>
+      </div>
+      <div class="catalog__block catalog__block-container">
         <article class="catalog__card card">
           <div class="card__wrapper container">
             <a class="card__link" href="#">
@@ -53,7 +58,6 @@
             </a>
             <a class="card__link-image" href="#">
               <picture>
-                <source width="169" height="210" type="image/jpeg" media="(min-width: 1440px)" srcset="./images/tablet-images/catalog/catalog-1@1x.png 1x, ./images/tablet-images/catalog/catalog-1@2x.png 2x">
                 <source width="200" height="210" type="image/jpeg" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-1@1x.png 1x, ./images/tablet-images/catalog/catalog-1@2x.png 2x">
                 <img class="card__image" src="./images/phone-images/catalog/catalog-1@1x.png" srcset="./images/phone-images/catalog/catalog-1@2x.png 2x" width="140" height="107" alt="продукт из курицы.">
               </picture>
@@ -111,9 +115,8 @@
             </a>
             <a class="card__link-image" href="#">
               <picture>
-                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="./images/tablet-images/catalog/catalog-3@1x.png 1x, ./images/tablet-images/catalog/catalog-3@2x.png 2x">
-                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-3@1x.png 1x, ./images/tablet-images/catalog/catalog-3@2x.png 2x">
-                <img class="card__image" src="./images/phone-images/catalog/catalog-3@1x.png" srcset="./images/phone-images/catalog/catalog-3@2x.png 2x" width="140" height="107" alt="продукт из рыбы.">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-5@1x.png 1x, ./images/tablet-images/catalog/catalog-5@2x.png 2x">
+                <img class="card__image" src="./images/phone-images/catalog/catalog-3@1x.png" srcset="./images/phone-images/catalog/catalog-3@2x.png 2x" width="140" height="107" alt="продукт с гречкой.">
               </picture>
             </a>
             <dl class="card__description-product description-product">
@@ -136,12 +139,12 @@
         <article class="catalog__card card">
           <div class="card__wrapper container">
             <a class="card__link" href="#">
-              <h2 class="card__title">Cat Energy PRO 500 г</h2>
+              <h2 class="card__title">Cat Energy PRO 1000 г</h2>
             </a>
             <a class="card__link-image" href="#">
               <picture>
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="./images/desktop-images/catalog/catalog-4@1x.png 1x, ./images/desktop-images/catalog/catalog-4@2x.png 2x">
-                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-4@1x.png 1x, ./images/tablet-images/catalog/catalog-4@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-6@1x.png 1x, ./images/tablet-images/catalog/catalog-6@2x.png 2x">
                 <img class="card__image" src="./images/phone-images/catalog/catalog-4@1x.png" srcset="./images/phone-images/catalog/catalog-4@2x.png 2x" width="140" height="107" alt="продукт из рыбы.">
               </picture>
             </a>
@@ -169,9 +172,8 @@
             </a>
             <a class="card__link-image" href="#">
               <picture>
-                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="./images/tablet-images/catalog/catalog-5@1x.png 1x, ./images/tablet-images/catalog/catalog-5@2x.png 2x">
-                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-5@1x.png 1x, ./images/tablet-images/catalog/catalog-5@2x.png 2x">
-                <img class="card__image" src="./images/phone-images/catalog/catalog-5@1x.png" srcset="./images/phone-images/catalog/catalog-5@2x.png 2x" width="140" height="107" alt="продукт с гречкой.">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-3@1x.png 1x, ./images/tablet-images/catalog/catalog-3@2x.png 2x">
+                <img class="card__image" src="./images/phone-images/catalog/catalog-5@1x.png" srcset="./images/phone-images/catalog/catalog-5@2x.png 2x" width="140" height="107" alt="продукт из рыбы.">
               </picture>
             </a>
             <dl class="card__description-product description-product">
@@ -199,7 +201,7 @@
             <a class="card__link-image" href="#">
               <picture>
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="./images/desktop-images/catalog/catalog-6@1x.png 1x, ./images/desktop-images/catalog/catalog-6@2x.png 2x">
-                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-6@1x.png 1x, ./images/tablet-images/catalog/catalog-6@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-4@1x.png 1x, ./images/tablet-images/catalog/catalog-4@2x.png 2x">
                 <img class="card__image" src="./images/phone-images/catalog/catalog-6@1x.png" srcset="./images/phone-images/catalog/catalog-6@2x.png 2x" width="140" height="107" alt="продукт с гречкой.">
               </picture>
             </a>
@@ -227,7 +229,6 @@
             </a>
             <a class="card__link-image" href="#">
               <picture>
-                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="./images/tablet-images/catalog/catalog-7@1x.png 1x, ./images/tablet-images/catalog/catalog-7@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/catalog/catalog-7@1x.png 1x, ./images/tablet-images/catalog/catalog-7@2x.png 2x">
                 <img class="card__image" src="./images/phone-images/catalog/catalog-7@1x.png" srcset="./images/phone-images/catalog/catalog-7@2x.png 2x" width="140" height="107" alt="продукт с рисом.">
               </picture>
@@ -249,18 +250,18 @@
             <a class="card__button button" href="#">заказать</a>
           </div>
         </article>
-        <div class="catalog__more">
-          <div class="container">
+        <article class="catalog__more">
+          <div class="catalog__more-block">
             <h2 class="catalog__more-title">Показать еще 100500 товаров</h2>
             <p class="catalog__more-text">На самом деле вкусов гораздо больше!</p>
-            <a class="catalog__button-more button" href="#">показать все</a>
           </div>
-        </div>
+          <a class="catalog__button-more button" href="#">показать все</a>
+        </article>
       </div>
     </section>
     <section class="addition">
-      <h2 class="addition__title subtitle">Дополнительные товары</h2>
       <div class="container">
+        <h2 class="addition__title subtitle">Дополнительные товары</h2>
         <div class="addition__block">
           <ul class="addition__list">
             <li class="addition__item-product item-product">
@@ -290,7 +291,7 @@
           </ul>
           <div class="addition__present">
             <p class="addition__offer">
-              Закажите все
+              Закажите все<br>
               и получите чехол для
               кота в подарок!
             </p>
@@ -299,12 +300,12 @@
       </div>
     </section>
     <section class="news">
-      <h2 class="news__title subtitle">Акции и новинки</h2>
-      <div class="container">
-        <p class="news__subscription">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <div class="news__container container">
+        <h2 class="news__title subtitle">Акции и новинки</h2>
+        <p class="news__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="news__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email">Введите ваш e-mail</label>
-          <input class="news__field" id="email" type="email" name="subscribe e-mail" value="кuklachev@gmail.com">
+          <input class="news__subscription" id="email" type="email" name="subscribe e-mail" value="кuklachev@gmail.com">
           <button class="news__button button" type="submit">Подписаться</button>
         </form>
       </div>
@@ -353,7 +354,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__developer-link" href="#">
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Переход на страницу html academy</span>
           <span class="footer__developer-name">HTML Academy</span>
           <span class="footer__developer-logo"></span>

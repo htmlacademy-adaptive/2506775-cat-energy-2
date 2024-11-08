@@ -36,9 +36,10 @@
     background:
       linear-gradient(180deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 30%,
-      rgba(234, 234, 234, 1) 30%,
+      rgba(255, 255, 255, 1) 29%,
+      rgba(234, 234, 234, 1) 29%,
       rgba(234, 234, 234, 1) 100%);
+    top: -2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +48,8 @@
 
   @media (min-width: $desktop-max-width) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(242, 242, 242, 1) 26%, rgba(242, 242, 242, 1) 100%);
+    top: 2px;
+    left: -3px;
   }
 }
 
@@ -103,9 +106,21 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: -1px;
+
     &::before {
       min-height: 512px;
     }
+
+    &::after {
+      top: 49%;
+      transform: translate(-50%, -49%);
+    }
+  }
+
+  @media (min-width: $desktop-max-width) {
+    top: 2px;
+    right: 3px;
   }
 }
 

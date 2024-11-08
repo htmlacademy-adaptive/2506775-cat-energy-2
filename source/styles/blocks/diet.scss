@@ -12,11 +12,11 @@
 
   @media (min-width: $tablet-width) {
     min-width: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 84px;
   }
 }
 
@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 53px 52px;
+    padding: 76px 63px 57px 52px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -48,7 +48,7 @@
 
   @media (min-width: $desktop-max-width) {
     flex: 46% 1 0;
-    padding: 77px 61px 55px 51px;
+    padding: 77px 61px 55px 55px;
   }
 }
 
@@ -72,7 +72,7 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: 41px;
+    top: 47px;
     left: 52px;
   }
 }
@@ -90,10 +90,11 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 162px;
+    margin-left: 159px;
     margin-bottom: 73px;
     padding-top: 50px;
   }
@@ -103,13 +104,25 @@
   }
 }
 
+.diet__title--pro {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
+}
+
 .diet__description {
   @include font(14px, 18px, 400);
   margin: 0;
-  min-width: 240px;
+  max-width: 227px;
   border-bottom: 1px solid $border-gray;
   padding-bottom: 23px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -117,12 +130,20 @@
     color: $basic-dark-text;
     width: 57%;
     border: none;
+    max-width: 340px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 457px;
     width: 100%;
-    margin-bottom: 17px;
+    margin-bottom: 3px;
+  }
+}
+
+.diet__description--slim {
+  @media (min-width: $desktop-max-width) {
+    margin-bottom: 4px;
   }
 }
 
@@ -138,7 +159,7 @@
   padding-right: 60px;
   background-image: url("../../icons/stack.svg#arrow");
   background-size: 24px 12px;
-  background-position: center right 8px;
+  background-position: right 20px top 2px;
   background-repeat: no-repeat;
   transition: opacity 0.3s ease, background-position 0.3s ease;
 
@@ -146,23 +167,29 @@
     content: "";
     position: absolute;
     top: 7px;
-    right: 24px;
+    right: 36px;
     width: 8px;
     height: 2px;
     background-color: $basic-dark-text;
   }
 
+  &:hover {
+    background-position: right 12px top 2px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    background-position: right 11px top 9px;
 
     &::after {
       top: 14px;
+      right: 27px;
     }
-  }
 
-  &:hover {
-    background-position: right center;
+    &:hover {
+      background-position: right 3px top 9px;
+    }
   }
 }
 

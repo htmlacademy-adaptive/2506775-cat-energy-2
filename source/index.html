@@ -22,7 +22,10 @@
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/tablet-images/logo-tablet.svg">
           <img class="main-header__logo" src="./images/phone-images/logo-mobile.svg" width="33" height="38" alt="логотип cat energy.">
         </picture>
-        <img class="main-header__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="фирменная надпись cat energy.">
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1024px)" srcset="./images/logo-text.svg">
+          <img class="main-header__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="фирменная надпись cat energy.">
+        </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button" disabled>
         <span class="visually-hidden">Открыть меню</span>
@@ -112,10 +115,9 @@
             </p>
           </li>
           <li class="description__item description__item--scale">
-            <p class="description__subtitle">
+            <p class="description__subtitle description__subtitle--scale">
               Уже через месяц наслаждайтесь
-              изменениями к лучшему<br>
-              вашего питомца!
+              изменениями к лучшему <br class="line-break">вашего питомца!
             </p>
           </li>
         </ul>
@@ -207,7 +209,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__developer-link" href="#">
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Переход на страницу html academy</span>
           <span class="footer__developer-name">HTML Academy</span>
           <span class="footer__developer-logo"></span>

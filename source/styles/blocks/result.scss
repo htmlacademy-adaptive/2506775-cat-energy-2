@@ -4,8 +4,9 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(234, 234, 234, 1) 56%, rgba(234, 234, 234, 1) 100%);
-    padding-bottom: 101px;
+    padding-top: 45px;
+    padding-bottom: 98px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 57%, rgba(234, 234, 234, 1) 57%, rgba(234, 234, 234, 1) 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +17,7 @@
 
   @media (min-width: $desktop-max-width) {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 23%, rgba(242, 242, 242, 1) 23%, rgba(242, 242, 242, 1) 100%);
-    padding-bottom: 70px;
+    padding-bottom: 76px;
   }
 }
 
@@ -33,7 +34,7 @@
 .result__example {
   display: grid;
   grid-template-columns: 124px 124px;
-  grid-template-rows: auto 70px auto;
+  grid-template-rows: auto auto auto;
   gap: 20px 32px;
   justify-content: center;
   margin-bottom: 20px;
@@ -47,24 +48,26 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 173px 165px;
-    grid-template-rows: auto 77px auto;
+    grid-template-rows: auto auto auto;
     align-content: start;
     column-gap: 31px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-max-width) {
-    grid-template-columns: 173px 255px;
+    grid-template-columns: 173px 229px;
+    row-gap: 0;
   }
 }
 
 
 .result__title {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +75,7 @@
   }
 
   @media (min-width: $desktop-max-width) {
-    margin-bottom: 146px;
+    margin-bottom: 150px;
   }
 }
 
@@ -85,12 +88,17 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-max-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .result__description {
   display: flex;
   flex-direction: column;
   position: relative;
+  min-height: 70px;
 }
 
 .result__days {
@@ -110,7 +118,8 @@
   border: 1px solid $special-gray;
   border-radius: 3px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 14px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -169,20 +178,29 @@
     text-align: right;
     font-size: 20px;
     line-height: 20px;
-    align-self: start;
-    margin-top: 11px;
+    align-self: center;
+
+    & > span {
+      margin-top: 9px;
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+      max-width: none;
+      justify-self: start;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
-    max-width: none;
-    justify-self: start;
+  @media (min-width: $desktop-max-width) {
+    margin-top: 59px;
   }
 }
 
 .result__expenses span {
   @media (min-width: $desktop-width) {
     margin-left: 64px;
+    display: inline;
   }
 }
 

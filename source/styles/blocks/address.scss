@@ -19,7 +19,7 @@
     background-size: 56px 53px;
     position: absolute;
     top: 251px;
-    left: 50%;
+    left: 42%;
     z-index: 10;
   }
 
@@ -27,7 +27,7 @@
     background-image:
       image-set(url("../../images/tablet-images/index/tablet-map@1x.jpg") 1x,
       url("../../images/tablet-images/index/tablet-map@2x.jpg") 2x);
-    background-size: 100% 65%;
+    background-size: 100% 67%;
     background-position: bottom;
     height: 608px;
 
@@ -35,8 +35,8 @@
       width: 113px;
       height: 106px;
       background-size: 113px 106px;
-      left: 50%;
-      top: 405px;
+      top: 346px;
+      left: 43%;
     }
   }
 
@@ -45,7 +45,7 @@
       image-set(url("../../images/desktop-images/index/map-desktop@1x.jpg") 1x,
       url("../../images/desktop-images/index/map-desktop@2x.jpg") 2x);
     background-position: 100%;
-    background-size: 100%;
+    background-size: cover;
     height: 400px;
 
     &::before {
@@ -66,15 +66,19 @@
   height: 362px;
 
   @media (min-width: $tablet-width) {
+    height: 407px;
+  }
+
+  @media (min-width: $desktop-width) {
     height: 400px;
   }
 }
 
 .address__container {
-  padding: 26px 0;
+  padding: 25px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 61px 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,7 +101,7 @@
   }
 
   @media (min-width: $desktop-max-width) {
-    padding: 60px 78px 60px 80px;
+    padding: 60px 75px 60px 80px;
   }
 }
 
@@ -138,6 +142,6 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
   }
 }

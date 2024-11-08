@@ -2,17 +2,14 @@
   @include font(24px, 24px, 400);
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-dark-text;
-  position: relative;
   margin: 0;
   overflow: hidden;
 
-  &::after {
-    content: "";
-    width: 500px;
-    height: 2px;
-    background-color: $bg-basic-green;
-    position: absolute;
-    top: 12px;
-    right: 0;
+  @media (min-width: $tablet-width) {
+    @include font(32px, 32px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(40px, 40px, 400);
   }
 }
