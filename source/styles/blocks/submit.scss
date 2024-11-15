@@ -1,0 +1,37 @@
+.submit {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 40px;
+    gap: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.submit__required-field {
+  @include font(14px, 16px, 400);
+  color: $basic-dark-text;
+  text-align: center;
+}
+
+.submit__button {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 208px;
+  }
+}
