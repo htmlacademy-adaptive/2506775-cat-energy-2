@@ -6,32 +6,6 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
-
-    &::after {
-      content: "";
-      background-color: #68b738;
-      width: 500px;
-      height: 2px;
-      position: absolute;
-      top: 24px;
-      left: 81%;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      background-color: $bg-basic-green;
-      top: 24px;
-      left: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      left: 60%;
-    }
   }
 }
 
@@ -43,12 +17,18 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 44px;
+    margin: 0 40px;
     margin-bottom: 76px;
-    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    margin: 0 0 76px;
+  }
+}
+
+.contacts__legend .contacts__legend-break {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

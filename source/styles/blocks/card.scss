@@ -1,5 +1,5 @@
 .card {
-  min-height: 184px;
+  min-height: 209px;
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
@@ -99,7 +99,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 24px;
+    padding-top: 21px;
     min-width: 169px;
     margin: 0 auto;
   }
@@ -118,6 +118,7 @@
   @media (min-width: $desktop-width) {
     align-self: center;
     max-width: 169px;
-    margin-top: 22px;
+    margin-top: 27px;
+    margin-bottom: 0;
   }
 }

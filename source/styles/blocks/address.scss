@@ -27,7 +27,7 @@
     background-image:
       image-set(url("../../images/tablet-images/index/tablet-map@1x.jpg") 1x,
       url("../../images/tablet-images/index/tablet-map@2x.jpg") 2x);
-    background-size: 100% 67%;
+    background-size: 100% 400px;
     background-position: bottom;
     height: 608px;
 
@@ -36,7 +36,7 @@
       height: 106px;
       background-size: 113px 106px;
       top: 346px;
-      left: 43%;
+      left: 333px;
     }
   }
 
@@ -78,12 +78,22 @@
   padding: 25px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 39px;
+    padding: 64px 39px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     position: relative;
+  }
+}
+
+.address__container--catalog {
+  @media (min-width: $tablet-width) {
+    padding: 60px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -96,12 +106,18 @@
     padding: 60px 25px;
     background-color: $basic-light-text;
     position: absolute;
-    top: 95px;
+    top: 91px;
     left: 0;
   }
 
   @media (min-width: $desktop-max-width) {
     padding: 60px 75px 60px 80px;
+  }
+}
+
+.address__block--catalog {
+  @media (min-width: $desktop-width) {
+    top: 95px;
   }
 }
 

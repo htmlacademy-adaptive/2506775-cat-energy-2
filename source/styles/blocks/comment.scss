@@ -4,42 +4,13 @@
   position: relative;
   overflow: hidden;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 2px;
-    background-color: $bg-basic-green;
-    top: 17px;
-    left: 49%;
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
-
-    &::after {
-      width: 1000px;
-      top: 24px;
-      left: 38%;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      background-color: $bg-basic-green;
-      top: 24px;
-      left: 0;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
-
-    &::after {
-      left: 25%;
-    }
   }
 }
 

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="../fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
@@ -53,11 +55,15 @@
         <h2 class="hero__title title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1024px)" srcset="./images/desktop-images/index/hero-product-desktop@1x.webp 1x, ./images/desktop-images/index/hero-product-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="./images/tablet-images/index/tablet-hero-product@1x.webp 1x, ./images/tablet-images/index/tablet-hero-product@2x.webp 2x">
+          <source type="image/webp" srcset="./images/phone-images/index/mobile-hero-product@1x.webp 1x, ./images/phone-images/index/mobile-hero-product@2x.webp 2x" width="280" height="270" alt="упаковка с питанием cat energy со вкусом курицы.">
+
           <source width="552" height="499" type="image/png" media="(min-width: 1024px)" srcset="./images/desktop-images/index/hero-product-desktop@1x.png 1x, ./images/desktop-images/index/hero-product-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/index/tablet-hero-product@1x.png 1x, ./images/tablet-images/index/tablet-hero-product@2x.png 2x">
           <img class="hero__product" src="./images/phone-images/index/mobile-hero-product@1x.png" srcset="./images/phone-images/index/mobile-hero-product@2x.png 2x" width="280" height="270" alt="упаковка с питанием cat energy со вкусом курицы.">
         </picture>
-        <a class="hero__button button" href="#">подобрать программу</a>
+        <a class="hero__button button" href="forms.html">подобрать программу</a>
       </div>
     </section>
 
@@ -145,15 +151,21 @@
             </div>
             <p class="result__expenses">Затраты на питание: <span>15 000 РУБ.</span></p>
           </div>
-          <div class="result__images-cat images-cat">
+          <div class="result__images-cat images-cat" tabindex="0">
             <div class="images-cat__before">
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="./images/tablet-images/index/tablet-cat-before@1x.webp 1x, ./images/tablet-images/index/tablet-cat-before@2x.webp 2x">
+                <source type="image/webp" srcset="./images/phone-images/index/mobile-cat-before@1x.webp 1x, ./images/phone-images/index/mobile-cat-before@2x.webp 2x" width="280" height="256" alt="Борис до приёма корма Cat Energy Slim.">
+
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/index/tablet-cat-before@1x.png 1x, ./images/tablet-images/index/tablet-cat-before@2x.png 2x">
                 <img src="./images/phone-images/index/mobile-cat-before@1x.png" srcset="./images/phone-images/index/mobile-cat-before@2x.png 2x" width="280" height="256" alt="Борис до приёма корма Cat Energy Slim.">
               </picture>
             </div>
             <div class="images-cat__after">
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="./images/tablet-images/index/tablet-cat-after@1x.webp 1x, ./images/tablet-images/index/tablet-cat-after@2x.webp 2x">
+                <source type="image/webp" srcset="./images/phone-images/index/mobile-cat-after@1x.webp 1x, ./images/phone-images/index/mobile-cat-after@2x.webp 2x" width="280" height="256" alt="Борис через два месяца после замены своего корма на Cat Energy Slim.">
+
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/tablet-images/index/tablet-cat-after@1x.png 1x, ./images/tablet-images/index/tablet-cat-after@2x.png 2x">
                 <img src="./images/phone-images/index/mobile-cat-after@1x.png" srcset="./images/phone-images/index/mobile-cat-after@2x.png 2x" width="280" height="256" alt="Борис через два месяца после замены своего корма на Cat Energy Slim.">
               </picture>
@@ -183,9 +195,9 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--index">
     <div class="footer__container container">
-      <div class="footer__navigation">
+      <div class="footer__navigation footer__navigation--index">
         <a class="footer__logo-link" href="#">
           <span class="visually-hidden">cat energy</span>
           <svg class="footer__logo-svg" viewBox="0 0 128 24" width="128" height="24">

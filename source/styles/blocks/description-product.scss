@@ -18,10 +18,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    padding-bottom: 6px;
   }
 }
 
 .description-product__value {
   margin: 0;
+}
+
+.description-product__value > span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }

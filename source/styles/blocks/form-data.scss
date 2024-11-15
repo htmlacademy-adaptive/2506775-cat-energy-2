@@ -8,6 +8,7 @@
 .form-data__title {
   line-height: 36px;
   margin-bottom: 37px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     line-height: 60px;
@@ -156,12 +157,15 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-
-    & > .container {
-      margin: 0;
-    }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-data__fieldset--pet > .container {
+    margin: 0;
+  }
+}
+
 
 .form-data__fieldset--diet {
   padding-top: 6px;

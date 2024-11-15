@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 14px;
   border-top: 1px solid $special-gray;
-  padding-top: 13px;
+  padding-top: 14px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
@@ -20,7 +20,7 @@
     grid-template-columns: repeat(2, 1fr) 93px;
     grid-template-rows: minmax(45px, 1fr) auto;
     align-items: baseline;
-    padding: 26px 38px 28px;
+    padding: 27px 38px 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
     grid-template-rows: auto;
     align-items: center;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 17px;
     min-height: auto;
     border-left: none;
@@ -55,7 +55,7 @@
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   align-self: start;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   padding-top: 9px;
   padding-bottom: 11px;
 
@@ -83,8 +83,8 @@
 
   @media (min-width: $desktop-width) {
     justify-self: start;
-    padding-top: 10px;
-    padding-left: 5px;
+    padding-top: 9px;
+    padding-left: 3px;
   }
 }
 

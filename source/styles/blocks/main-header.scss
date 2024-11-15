@@ -17,7 +17,7 @@
 .main-header__container {
   display: grid;
   grid-template-columns: 1fr min-content;
-  grid-template-rows: 64px;
+  grid-template-rows: 65px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -67,14 +67,6 @@
   }
 }
 
-.main-header__logo-text {
-  margin-top: 5px;
-}
-
-.main-header__logo-text--catalog {
-  margin-top: 0;
-}
-
 .main-header__toggle {
   width: 24px;
   height: 24px;
@@ -120,7 +112,8 @@
     width: 25px;
     height: 2px;
     position: absolute;
-    left: 0;
+    left: 3px;
+    top: 11px;
     background-color: $basic-dark-text;
   }
 
@@ -147,15 +140,22 @@
 
 .main-header--catalog {
   border-bottom: 1px solid $border-gray;
-  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
-    margin-bottom: 67px;
+    margin-bottom: 73px;
+  }
+}
+
+.main-header__logo-text--catalog {
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }

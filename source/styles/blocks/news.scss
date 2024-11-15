@@ -1,59 +1,16 @@
 .news {
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 40px;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 34%;
-    height: 2px;
-    background-color: $bg-basic-green;
-    position: absolute;
-    top: 31px;
-    right: 0;
-  }
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 79px;
-
-
-    &::before {
-      content: "";
-      width: 5%;
-      height: 2px;
-      background-color: $bg-basic-green;
-      position: absolute;
-      top: 76px;
-      left: 0;
-    }
-
-    &::after {
-      width: 59%;
-      top: 76px;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 75px;
+    padding-top: 70px;
     padding-bottom: 103px;
-
-    &::before {
-      top: 92px;
-    }
-
-    &::after {
-      width: 69%;
-      top: 80px;
-    }
-  }
-
-  @media (min-width: $desktop-max-width) {
-    &::after {
-      width: 72%;
-      max-width: 1052px;
-      top: 92px;
-    }
   }
 }
 
@@ -72,23 +29,15 @@
 .news__title {
   margin-bottom: 31px;
 
-  &::after {
-    left: 212px;
-  }
-
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    margin-left: 40px;
     margin-bottom: 66px;
-
-    &::after {
-      left: 41%;
-      width: 59%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
-    margin-bottom: 72px;
+    margin-left: 0;
+    margin-bottom: 67px;
+    line-height: 50px;
   }
 }
 

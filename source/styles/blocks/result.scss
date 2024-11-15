@@ -4,7 +4,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 47px;
     padding-bottom: 98px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 57%, rgba(234, 234, 234, 1) 57%, rgba(234, 234, 234, 1) 100%);
   }
@@ -42,8 +42,8 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: 72px 77px;
     grid-template-columns: 162px 162px 1fr;
-    gap: 55px 43px;
-    margin-bottom: 102px;
+    gap: 54px 43px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,6 +152,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $bg-basic-gray;
+    top: 60px;
   }
 }
 
@@ -179,17 +180,12 @@
     font-size: 20px;
     line-height: 20px;
     align-self: center;
+  }
 
-    & > span {
-      margin-top: 9px;
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-column: 1 / -1;
-      max-width: none;
-      justify-self: start;
-    }
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    max-width: none;
+    justify-self: start;
   }
 
   @media (min-width: $desktop-max-width) {
@@ -198,8 +194,13 @@
 }
 
 .result__expenses span {
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-left: 64px;
+    margin-left: 62px;
     display: inline;
   }
 }
@@ -212,6 +213,6 @@
   }
 
   @media (min-width: $desktop-max-width) {
-    margin-top: -205px;
+    margin-top: -210px;
   }
 }

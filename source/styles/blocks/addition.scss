@@ -1,51 +1,14 @@
 .addition {
   padding-top: 25px;
   padding-bottom: 20px;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 11%;
-    height: 2px;
-    background-color: $bg-basic-green;
-    position: absolute;
-    top: 33px;
-    right: 0;
-  }
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      content: "";
-      width: 5%;
-      height: 2px;
-      background-color: $bg-basic-green;
-      position: absolute;
-      top: 39px;
-      left: 0;
-    }
-
-    &::after {
-      width: 47%;
-      top: 39px;
-    }
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      width: 57%;
-      top: 41px;
-    }
-
-    &::before {
-      top: 41px;
-    }
-  }
-
-  @media (min-width: $desktop-max-width) {
-    &::after {
-      width: 64%;
-      max-width: 922px;
-    }
+    padding-top: 27px;
   }
 }
 
@@ -66,10 +29,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,7 +45,7 @@
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../../icons/stack.svg#icon-gift");
   text-align: center;
-  padding: 187px 60px 43px 58px;
+  padding: 188px 60px 43px 58px;
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center top 59px;
@@ -115,10 +78,6 @@
   @media (min-width: $desktop-width) {
     background-position: 50% 59px;
     padding: 187px 42px 43px;
-
-    &::after {
-      background-position: center;
-    }
   }
 }
 
@@ -141,21 +100,14 @@
   margin: 0;
   margin-bottom: 33px;
 
-  &::after {
-    left: 275px;
-  }
-
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    margin-bottom: 78px;
-
-    &::after {
-      left: 410px;
-    }
+    margin-left: 40px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
-    padding-left: 0;
+    margin-bottom: 73px;
+    margin-left: 0;
+    line-height: 50px;
   }
 }
