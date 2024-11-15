@@ -112,24 +112,6 @@
 
 .footer__social {
   margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.footer__developer-logo {
-  display: block;
-  height: 34px;
-  width: 29px;
-  background-color: $link-gray;
-  mask-image: url("../../icons/stack.svg#logo-html");
-  mask-size: 27px 34px;
-  mask-repeat: no-repeat;
-  mask-position: right;
-  transition: background-color 0.3s ease;
-}
-
-.footer__social {
-  margin: 0;
   padding: 20px 0;
   list-style-type: none;
   border-top: 1px solid $border-gray;
@@ -145,6 +127,18 @@
     margin-right: 0;
     padding-top: 22px;
   }
+}
+
+.footer__developer-logo {
+  display: block;
+  height: 34px;
+  width: 29px;
+  background-color: $link-gray;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  mask-position: right;
+  transition: background-color 0.3s ease;
 }
 
 .footer__social--index {
