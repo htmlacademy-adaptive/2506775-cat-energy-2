@@ -2,6 +2,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-between;
     gap: 80px;
   }
@@ -82,6 +83,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-dark-text;
   text-transform: uppercase;
+
   margin: 0;
   margin-bottom: 29px;
   margin-left: 69px;
