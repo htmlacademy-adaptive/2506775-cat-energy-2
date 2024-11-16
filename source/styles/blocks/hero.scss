@@ -9,6 +9,7 @@
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -45,7 +46,7 @@
 
 .hero__container {
   display: grid;
-  grid-template-rows: 100px 68px 270px 43px;
+  grid-template-rows: min-content 68px 270px 43px;
   grid-template-columns: 1fr;
   justify-content: center;
 
@@ -100,6 +101,7 @@
   text-transform: uppercase;
   color: $basic-light-text;
   place-self: center center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $basic-dark-text;

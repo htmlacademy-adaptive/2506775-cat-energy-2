@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +91,7 @@
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 24px;
+    max-width: 340px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,16 +199,16 @@
 
   @media (min-width: $desktop-width) {
     background-size: 24px 18px;
-    background-position: right 12px top 4px;
+    background-position: right 12px top 7px;
 
     &::after {
       height: 2px;
-      top: 12px;
+      top: 15px;
       right: 28px;
     }
 
     &:hover {
-      background-position: right 4px top 4px;
+      background-position: right 4px top 7px;
     }
   }
 }

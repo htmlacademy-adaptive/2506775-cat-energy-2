@@ -1,7 +1,6 @@
 .footer {
   background-color: $bg-basic-gray;
-  padding-top: 38px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
@@ -14,7 +13,7 @@
 
 .footer--index {
   @media (min-width: $tablet-width) {
-    padding-top: 38px;
+    padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {

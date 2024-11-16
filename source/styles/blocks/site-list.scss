@@ -87,6 +87,10 @@
       background-color: $basic-light-text;
     }
   }
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .site-list__link--current-catalog {
