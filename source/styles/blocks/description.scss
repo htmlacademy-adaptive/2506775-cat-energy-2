@@ -21,8 +21,6 @@
   list-style-type: none;
   counter-reset: chapter;
 
-  counter-reset: chapter;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 247px 249px;
