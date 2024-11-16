@@ -1,6 +1,39 @@
 .item-product {
   font-size: 14px;
   line-height: 14px;
+  border-top: 1px solid $special-gray;
+  padding-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  min-height: 98px;
+
+  &:last-child {
+    border-bottom: 1px solid $special-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    border-left: 1px solid $special-gray;
+    border-right: 1px solid $special-gray;
+    grid-template-columns: repeat(2, 1fr) 93px;
+    grid-template-rows: minmax(45px, 1fr) auto;
+    align-items: baseline;
+    padding: 27px 38px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 27% 10% 27%;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    min-height: auto;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .item-product__title {
@@ -8,4 +41,66 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $special-dark-gray;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px, 400);
+    margin-bottom: 0;
+  }
+}
+
+.item-product__button {
+  display: block;
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  align-self: start;
+  margin-bottom: 17px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+}
+
+.item-product__weight {
+  grid-row: 2 / 3;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    padding-top: 9px;
+    padding-left: 3px;
+  }
+}
+
+.item-product__price {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
 }

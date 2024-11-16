@@ -1,25 +1,22 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-.page {
-  height: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.page__body {
-  min-height: 100%;
-  font-family: "Lato", "Arial", sans-serif;
-  color: $primary-text;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
+img {
+  display: inline-block;
 }
 
-.container {
-  margin: 0 auto;
+picture {
+  display: contents;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    display: contents;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    display: contents;
   }
 }

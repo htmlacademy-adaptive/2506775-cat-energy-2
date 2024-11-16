@@ -1,18 +1,99 @@
+
+.contacts {
+  border: none;
+  padding-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.contacts__legend {
+  padding: 0;
+  line-height: 26px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 40px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px;
+  }
+}
+
+.contacts__legend .contacts__legend-break {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .contacts__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__input {
+  padding: 14px 15px;
+  border: 1px solid $special-gray;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center right 14px;
+
+  &:hover {
+    border: 1px solid $special-gray;
+  }
+
+  &:focus-visible {
+    border: 2px solid $primary-text;
   }
 }
 
 .contacts__input--email {
   background-image: url("../../icons/stack.svg#icon-email");
-  background-repeat: no-repeat;
-  width: 217px;
+
+  &:focus-visible {
+    background-image: url("../../icons/stack.svg#email-focus");
+  }
 }
 
 .contacts__input--phone {
   background-image: url("../../icons/stack.svg#icon-phone");
-  background-repeat: no-repeat;
-  width: 200px;
 }
