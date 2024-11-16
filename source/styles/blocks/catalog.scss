@@ -135,6 +135,8 @@
   background-color: $bg-basic-gray;
   color: $primary-text;
   display: block;
+  max-width: 280px;
+  margin: 0 auto;
 
   &:hover {
     background-color: $border-catalog-card;
