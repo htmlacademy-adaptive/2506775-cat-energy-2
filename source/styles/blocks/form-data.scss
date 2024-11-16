@@ -48,7 +48,6 @@
   padding: 0;
   list-style-type: none;
 
-
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
@@ -61,7 +60,6 @@
 
 .form-data__block {
   @media (min-width: $desktop-width) {
-
     display: flex;
     justify-content: space-between;
     padding-bottom: 70px;
@@ -119,7 +117,6 @@
   }
 }
 
-
 .form-data__fieldset {
   border: none;
   padding: 0;
@@ -169,7 +166,6 @@
   }
 }
 
-
 .form-data__fieldset--diet {
   padding-top: 6px;
   margin-bottom: 26px;
@@ -184,10 +180,8 @@
   }
 }
 
-
 .form-data__submit {
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
 }
-
