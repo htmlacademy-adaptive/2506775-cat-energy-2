@@ -18,7 +18,7 @@
 .card__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, auto) 53px;
 
   @media (min-width: $tablet-width) {
     width: 77%;
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 82%;
+    width: 69%;
   }
 }
 
@@ -74,6 +74,10 @@
   &:active {
     opacity: 0.4;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .card__title {
@@ -109,7 +113,6 @@
   grid-column: 1 / -1;
   grid-row: 3/4;
   align-self: end;
-  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

@@ -21,7 +21,7 @@
 .catalog__title {
   line-height: 36px;
   margin-bottom: 40px;
-  margin-top: 29px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -40,6 +40,10 @@
     grid-template-columns: repeat(2, 324px);
     justify-content: center;
     gap: 58px 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,6 +135,8 @@
   background-color: $bg-basic-gray;
   color: $primary-text;
   display: block;
+  max-width: 280px;
+  margin: 0 auto;
 
   &:hover {
     background-color: $border-catalog-card;

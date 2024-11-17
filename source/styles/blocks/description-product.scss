@@ -1,9 +1,11 @@
 .description-product {
   @include font(12px, 16px, 400);
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    width: 100%;
   }
 }
 
