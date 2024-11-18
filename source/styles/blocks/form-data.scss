@@ -185,3 +185,8 @@
     margin-bottom: 60px;
   }
 }
+
+.form-data__input--number::-webkit-outer-spin-button,
+.form-data__input--number::-webkit-inner-spin-button {
+  appearance: none;
+}
