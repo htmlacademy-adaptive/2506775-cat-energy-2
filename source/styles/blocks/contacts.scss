@@ -167,10 +167,6 @@
   }
 }
 
-.contacts__input:hover + .contacts__input-icon {
-  background-color: $bg-basic-green;
-}
-
 .contacts__input:focus-visible + .contacts__input-icon {
   background-color: $bg-basic-green;
 }
