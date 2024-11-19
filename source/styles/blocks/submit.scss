@@ -8,11 +8,12 @@
     flex-direction: row;
     align-items: center;
     padding: 0 40px;
-    gap: 29px;
+    gap: 57px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    gap: 78px;
   }
 }
 
@@ -20,6 +21,15 @@
   @include font(14px, 16px, 400);
   color: $basic-dark-text;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .submit__button {
