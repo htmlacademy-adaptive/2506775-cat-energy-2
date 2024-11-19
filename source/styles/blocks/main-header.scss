@@ -153,6 +153,16 @@
   }
 }
 
+.main-header--forms {
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
+}
+
 .main-header__logo-text--catalog {
   margin-top: 5px;
 

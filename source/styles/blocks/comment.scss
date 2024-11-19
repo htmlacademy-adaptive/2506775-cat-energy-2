@@ -1,16 +1,16 @@
 .comment {
   border: none;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   position: relative;
   overflow: hidden;
-
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
 }
 
@@ -30,10 +30,24 @@
   margin-bottom: 38px;
   position: relative;
 
+  &::after {
+    left: calc(100% + 20px);
+    top: 14px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 87px;
+    margin-bottom: 82px;
+
+    &::before,
+    &::after {
+      top: 26px;
+    }
+
+    &::after {
+      left: calc(100% + 42px);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -49,13 +63,23 @@
   width: 100%;
   min-height: 150px;
   padding: 14px;
+  padding-top: 12px;
+  transition: border-color 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid $special-gray;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    min-height: 175px;
+    padding-left: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 175px;
+    min-height: 171px;
+    padding-top: 5px;
+    padding-left: 20px;
   }
 }
