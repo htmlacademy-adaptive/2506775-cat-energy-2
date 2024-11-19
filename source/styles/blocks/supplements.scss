@@ -1,12 +1,16 @@
 
 .supplements {
   border: none;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   position: relative;
   overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
@@ -28,38 +32,88 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 26px 59px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 .supplements__item {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
 }
 
-.supplements__item:not(:last-child) {
-  margin-bottom: 13px;
+.supplements__item--sugar {
+  @media (min-width: $desktop-width) {
+    margin-right: 48px;
+  }
+}
+
+.supplements__item--water {
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+  }
+}
+
+.supplements__item--milk {
+  @media (min-width: $desktop-width) {
+    margin-right: 139px;
+  }
 }
 
 .supplements__legend {
   padding: 0;
   line-height: 26px;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
+
+  &::after {
+    left: calc(100% + 20px);
+    top: 14px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 57px;
+    margin-bottom: 50px;
+
+    &::before,
+    &::after {
+      top: 26px;
+    }
+
+    &::after {
+      left: calc(100% + 40px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
   }
 }
 
 .supplements__label {
   position: relative;
-  padding-left: 60px;
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
 }
 
 .supplements__mark {
@@ -71,6 +125,12 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+  transition: border-color 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .supplements__input[type="checkbox"]:checked + .supplements__mark::before {
@@ -83,4 +143,30 @@
   background-image: url("../../icons/stack.svg#checkbox-logo");
   width: 19px;
   height: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.supplements__input:disabled + .supplements__mark {
+  opacity: 0.3;
+}
+
+.supplements__input:disabled ~ .supplements__label-name {
+  opacity: 0.3;
+}
+
+
+.supplements__label:focus-visible .supplements__mark {
+  border-color: $radio-button-hover;
+}
+
+.supplements__label:hover .supplements__mark {
+  border-color: $radio-button-hover;
+}
+
+.supplements__input[type="checkbox"]:checked + .supplements__mark {
+  border-color: $radio-button-hover;
 }

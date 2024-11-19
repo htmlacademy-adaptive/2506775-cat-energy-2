@@ -16,7 +16,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--catalog  main-header--nojs">
+  <header class="main-header main-header--catalog main-header--forms  main-header--nojs">
     <div class="main-header__container container">
       <a class="main-header__logo-link" href="index.html">
         <picture>
@@ -24,7 +24,10 @@
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/tablet-images/logo-tablet.svg">
           <img class="main-header__logo" src="./images/phone-images/logo-mobile.svg" width="33" height="38" alt="логотип cat energy.">
         </picture>
-        <img class="main-header__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="фирменная надпись cat energy.">
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1024px)" srcset="./images/logo-text.svg">
+          <img class="main-header__logo-text main-header__logo-text--catalog" src="./images/logo-text.svg" width="101" height="20" alt="фирменная надпись cat energy.">
+        </picture>
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button" disabled>
         <span class="visually-hidden">Открыть меню</span>
@@ -72,11 +75,11 @@
                   </label>
                   <input class="form-data__input form-data__input--number input" id="weight" type="number" name="weight" value="7" required>
                 </li>
-                <li class="form-data__item">
+                <li class="form-data__item form-data__item--age">
                   <label class="form-data__label label" for="age">
                     Возраст (лет):
                   </label>
-                  <input class="form-data__input form-data__input--number  form-data__input--big input" id="age" type="number" name="age" value="7">
+                  <input class="form-data__input form-data__input--number  form-data__input--age input" id="age" type="number" name="age" value="7">
                 </li>
               </ul>
             </div>
@@ -113,19 +116,21 @@
         <fieldset class="form-data__fieldset contacts">
           <legend class="visually-hidden">Заполните свои данные</legend>
           <div class="container">
-            <h2 class="contacts__legend subtitle">Контактные данные<br class="contacts__legend-break">(владельца кота)</h2>
+            <h2 class="contacts__legend subtitle">Контактные данные<br class="contacts__legend-break"><span>&nbsp;</span>(владельца кота)</h2>
             <ul class="contacts__list">
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--email">
                 <label class="contacts__label label" for="email">
                   E-mail:*
                 </label>
                 <input class="contacts__input contacts__input--email input" id="email" type="email" name="e-mail" value="кuklachev@gmail.com" required>
+                <span class="contacts__input-icon contacts__email"></span>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--phone">
                 <label class="contacts__label label" for="phone">
                   Телефон:*
                 </label>
-                <input class="contacts__input contacts__input--phone input" id="phone" type="tel" name="Phone number" value="8 (960) 900-60-90" required>
+                <input class="contacts__input contacts__input--phone  input" id="phone" type="tel" name="Phone number" value="8 (960) 900-60-90" required>
+                <span class="contacts__input-icon contacts__phone"></span>
               </li>
             </ul>
           </div>
@@ -142,28 +147,28 @@
           <div class="container">
             <h2 class="supplements__legend subtitle">Дополнительно</h2>
             <ul class="supplements__list">
-              <li class="supplements__item">
+              <li class="supplements__item supplements__item--sugar">
                 <label class="supplements__label label-name">
                   <input class="supplements__input visually-hidden" type="checkbox" name="sweetener" checked>
                   <span class="supplements__mark"></span>
                   <span class="supplements__label-name">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="supplements__item">
+              <li class="supplements__item supplements__item--water">
                 <label class="supplements__label label-name">
                   <input class="supplements__input visually-hidden" type="checkbox" name="drinking water">
                   <span class="supplements__mark"></span>
                   <span class="supplements__label-name">питьевая вода</span>
                 </label>
               </li>
-              <li class="supplements__item">
+              <li class="supplements__item supplements__item--milk">
                 <label class="supplements__label label-name">
                   <input class="supplements__input visually-hidden" type="checkbox" name="milk">
                   <span class="supplements__mark"></span>
                   <span class="supplements__label-name">молоко</span>
                 </label>
               </li>
-              <li class="supplements__item">
+              <li class="supplements__item supplements__item--vitamins">
                 <label class="supplements__label label-name">
                   <input class="supplements__input visually-hidden" type="checkbox" name="vitamins">
                   <span class="supplements__mark"></span>
@@ -184,7 +189,7 @@
     <section class="address address--background">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="address__container container">
-        <div class="address__block">
+        <div class="address__block address__block--catalog">
           <p class="address__offer">
             приглашаем<br>
             к сотрудничеству
